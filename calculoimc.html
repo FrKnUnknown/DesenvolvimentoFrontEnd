@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calcule o IMC - Franklin's Nutrição</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="home.html">Ínicio</a>
+            <li><a href="calculoimc.html">Calcule o IMC</a>
+            <li><a href="sobrenos.html">Sobre nós</a>
+            <li class="drop"><a href="formulario.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img class="banner" src="BannerLogo.png">
+    </div>
+    <div>
+        <h1>Franklin's Nutrição</h1>
+    </div>
+    <div class="tabela">
+        <table border="1">
+            <tr class="tb_escuro">
+                <th>IMC</th>
+                <th>CLASSIFICAÇÃO</th>
+                <th>OBESIDADE(GRAU)</th>
+            </tr>
+            <tr class="tb_claro">
+                <td>MENOR QUE 18,5</td>
+                <td>MAGREZA</td>
+                <td>0</td>
+            </tr>
+            <tr class="tb_escuro">
+                <td>ENTRE 18,5 E 24,9</td>
+                <td>NORMAL</td>
+                <td>0</td>
+            </tr>
+            <tr class="tb_claro">
+                <td>ENTRE 25,0 E 29,9</td>
+                <td>SOBREPESO</td>
+                <td>I</td>
+            </tr>
+            <tr class="tb_escuro">
+                <td>ENTRE 30,0 E 39,9</td>
+                <td>OBESIDADE</td>
+                <td>II</td>
+            </tr>
+            <tr class="tb_claro">
+                <td>MAIOR QUE 40,0</td>
+                <td>OBESIDADE GRAVE</td>
+                <td>III</td>
+            </tr>
+        </table>
+    </div>
+    <div class="sub_titulo">
+        <h2>Preencha sua altura e peso para seu resultado</h2>
+    </div>
+    <div class="area">
+        <div class="imc">
+            <h2 class="imc_titulo">Calcule seu IMC</h2>
+            <div class="input_area">
+                <h4>Altura(m)</h4>
+                <input id="altura" type="number">
+            </div>
+            <div class="input_area">
+                <h4>Peso(kg)</h4>
+                <input id="peso" type="number">
+            </div>
+            <button id="botao_calcular" onclick="calculo()">Calcular</button>
+            <div class="resultado_imc">
+                Resultado: <span id="resultado"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <p class="main">
+                2022 © Franklin's Nutrição | Mateus "FrKn" Franklin | Design by <a class="FrKn"
+                    href="https://github.com/FrKnUnknown" target="_blank">FrKnUnknown</a>
+            </p>
+    </div>
+
+</body>
+
+</html>

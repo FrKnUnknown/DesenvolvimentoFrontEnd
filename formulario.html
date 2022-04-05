@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco - Franklin's Nutrição</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="home.html">Ínicio</a>
+            <li><a href="calculoimc.html">Calcule o IMC</a>
+            <li><a href="sobrenos.html">Sobre nós</a>
+            <li class="drop"><a href="formulario.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img class="banner" src="BannerLogo.png">
+    </div>
+    <div>
+        <h1>Franklin's Nutrição</h1>
+    </div>
+    <div class="titulo">
+        <h2>Deseja entrar em contato conosco?</h2>
+        <h2>Preencha o formulário abaixo e enviaremos um e-mail para você.</h2>
+    </div>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="grupo_formulario">
+                    <label>Nome:</label>
+                    <input class="grupo_formulario" type="text" />
+                    <label>Sobrenome:</label>
+                    <input class="grupo_formulario" type="text" />
+                    <label>Nascimento:</label>
+                    <input class="grupo_formulario" id="date" type="date">
+                    &ensp;<label>Sexo:</label>
+                    <select class="grupo_formulario" id="Sexo" name="Sexo">
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Ferminino">Feminino</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                <div>
+                    &emsp;&emsp; <label>E-mail:</label>
+                    <input class="grupo_formulario" type="email" size="30" cellspacing="2" />
+                    <label>CPF:</label>
+                    <input class="grupo_formulario" id="cpf" type="text" class="form-control" \
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                    <script>
+                        $("#cpf").keypress(function () {
+                            $(this).mask('000.000.000-00');
+                        });
+                    </script>
+            </fieldset>
+    </div>
+    <br>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+                <div class="grupo-formulario">
+                    <label>Rua:</label>
+                    <input class="grupo_formulario" type="text" size="30" />
+                    <label>Numero:</label>
+                    <input class="grupo_formulario" type="text" size="4" />
+                    <label>Bairro:</label>
+                    <input class="grupo_formulario" type="text" size="30" />
+
+                    <div>
+                        <div>
+                            <label>Estado:</label>
+                            <select class="grupo_formulario" id="UF" name="UF">
+                                <option value="">Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espirito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+
+                            <label>Cidade:</label>
+                            <input class="grupo_formulario" type="text" size="30">
+                            <label>CEP:</label>
+                            <input class="grupo_formulario" type="text" id="cep" size="15">
+                            <script>$("#cep").keypress(function () {
+                                    $(this).mask('00000-000');
+                                });
+                            </script>
+                        </div>
+            </fieldset>
+
+            <div class="botao_form">
+                <Button type="button" onclick="enviarForm()" class="botao_final" value="Enviar"> Enviar formulario
+                </Button>
+                <Button type="reset" class="botao_final"> Limpar </Button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <footer>
+            <p class="main">
+                2022 © Franklin's Nutrição | Mateus "FrKn" Franklin | Design by <a class="FrKn"
+                    href="https://github.com/FrKnUnknown" target="_blank">FrKnUnknown</a>
+            </p>
+    </div>
+
+</body>
+
+</html>
