@@ -23,3 +23,15 @@ Visão, missão e os valores empresa. Cada grupo um em sua respectiva div;
 
 Mapa do Google com o endereço da empresa;
 
+Autores:
+Danilo de Souza Rufino
+LinkedIn: https://www.linkedin.com/in/danilo-rufino-202b02214/
+E-mail: desouzafino@gmail.com
+
+José Ricardo Chies Gonçalves
+LinkedIn: https://www.linkedin.com/in/ricardo-chies-087557216/
+E-mail: chies.dev@gmail.com
+
+Mateus Franklin Neco
+LinkedIn: https://www.linkedin.com/in/mateus-franklin-3049941a2/
+E-mail: matfranklin@outlook.com
