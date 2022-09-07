@@ -1,4 +1,4 @@
-# DesenvolvimentoFrontEnd
+# Trabalho de Front-End.
 Conceitos Básicos de HTML, CSS e Javascript.
 
 A Página contém:
